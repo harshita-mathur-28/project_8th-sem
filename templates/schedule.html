@@ -105,7 +105,7 @@
     <section class="site-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 mb-5">
+          <div class="col-lg-6 mb-5" style="background-color: rgb(206, 240, 240);">
             <h2 class="mb-4">Schedule of interview</h2>
             <form method="post" action="schedule" class="p-4 border rounded">
 
@@ -141,12 +141,13 @@
               </div>
 
             </form>
+            {% if kota %}
+          <h3>{{kota}}</h3>
+          {% endif %}
           </div>
 
         </div>
-        {% if kota %}
-          <h3>{{kota}}</h3>
-          {% endif %}
+        
       </div>
 
     </section>
